@@ -1,0 +1,39 @@
+.page__benefits{
+    padding: 120px 0;
+}
+
+.benefits {
+    &-container {
+        display: flex;
+        justify-content: center;
+    }
+    &__items{
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        column-gap: 70px;
+        max-width: 794px;
+    }
+    &__item{
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        justify-content: center;
+    
+    }
+
+
+    &__icon{
+        margin-bottom: 53px;
+    }
+
+
+    &__text{
+        text-align: center;
+        font-family: $font-secondary;
+        font-size: 20px;
+        font-weight: 300;
+        line-height: 135%;
+        letter-spacing: -0.9px;
+    }
+}
