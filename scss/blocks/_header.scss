@@ -1,0 +1,85 @@
+.header-container {
+    min-height: 840px;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    align-items: center;
+
+}
+
+.header {
+    background:
+     linear-gradient(180deg, #242B33 11.98%,
+      rgba(45, 52, 60, 0.38) 51.04%, #242B33 92.19%),
+       url('../img/header/header-bg.jpg'),
+        lightgray 50% / cover no-repeat;
+    &__top{
+        padding-top: 30px;
+    }   
+    &__footer {
+        padding-bottom: 74px;
+    } 
+  
+}
+
+.top-header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    width: 100%;
+    &__list {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+    }
+
+    &__item:not(:last-child) {
+        margin-right: 40px;
+    }
+    
+}
+
+
+.header__title {
+    &-text{
+        text-align: center;
+        color: $accent;
+        text-align: center;
+        font-family: Playfair Display;
+        font-size: 48px;
+        font-weight: 700;
+        margin-bottom: 81px;
+  
+    }
+    &-icon{
+        display: block;
+        text-align: center;
+    }
+}
+
+ 
+.header-contacts {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    gap: 98px;
+    &__item{
+        display: flex;
+        justify-content: center;
+        align-items: center;
+    }
+    &__item:last-child{
+        justify-content: start;
+    }
+    &__icon{
+        margin-right: 14px;
+    }
+    &__text{
+        color: $white;
+        text-align: center;
+        font-family: Raleway;
+        font-size: 18px;
+    }
+
+}
+
+
