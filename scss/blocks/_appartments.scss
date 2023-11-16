@@ -1,0 +1,85 @@
+
+.appartments {
+    &__title{
+        margin-bottom: 88px;
+    }
+    &__items {
+        display: grid;
+        gap: 30px;
+        grid-template-columns: repeat(2, 1fr);
+    }
+   
+    &__item {
+        position: relative;
+    }
+    &__card {
+        display: block;
+        position: relative;
+        overflow: hidden;
+        height: 100%;
+        width: 100%;
+        padding-bottom: 58%;
+        transition: all 1s ease;
+        &::before{
+            position: absolute;
+            z-index: 1;
+            top: 0;
+            left: 0;
+            right: 0;
+            bottom: 0;
+            content: '';
+            background: linear-gradient(180deg, rgba(36, 43, 51, 0.00) 0%, #242B33 100%);
+        }
+        
+        &:hover{
+        color: $white;
+        transition: all 1s ease;
+        }
+        &::after{
+            content: "";
+            z-index: 4;
+            position: absolute;
+            opacity: 0;
+            border: 3px double $white;
+            transition: all 1s ease;    
+        }
+        &:hover::after {
+            content: "";
+            z-index: 4;
+            position: absolute;
+            opacity: 0.4;
+            top: 0;
+            left: 0;
+            bottom: 0;
+            right: 0;
+            border: 3px double $white;        
+    }
+        
+    }
+    &__card-img {
+        opacity: 0.99;
+        top: 0;
+        left: 0;
+        transform: scale(1.2);
+        position: absolute;
+        
+         object-fit: cover;
+        transition: all 1s ease;   
+    }
+    &__desk{
+        position: absolute;
+        z-index: 9999;
+        left: 50px;
+        bottom: 50px;
+        font-size: 24px;
+        font-weight: 400;
+       
+    }
+}
+
+
+.appartments__card:hover .appartments__card-img { 
+    transform: scale(1);
+    object-fit: cover;
+}
+

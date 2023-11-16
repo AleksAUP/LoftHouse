@@ -1,0 +1,29 @@
+.page__appartments {
+  margin-bottom: 180px;
+}
+
+.appartments__title {
+  margin-bottom: 88px;
+}
+.appartments__items {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 30px;
+}
+.appartments__item {
+  flex: 1 1 50%;
+}
+.appartments__card {
+  position: relative;
+}
+.appartments__card-img {
+  position: absolute;
+  top: 0;
+  left: 0;
+  height: 100%;
+  width: 100%;
+  transform: scale(1.2);
+}
+.appartments__card-img:hover {
+  transform: scale(1.2);
+}/*# sourceMappingURL=appartments.css.map */

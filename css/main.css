@@ -38,11 +38,6 @@ img {
   vertical-align: top;
 }
 
-img, svg {
-  max-width: 100%;
-  height: auto;
-}
-
 address {
   font-style: normal;
 }
@@ -118,9 +113,19 @@ a:hover {
   position: absolute;
   clip: rect(1px 1px 1px 1px);
   clip: rect(1px 1px 1px 1px);
-  -webkit-clip-path: inset(50%);
-          clip-path: inset(50%);
+  clip-path: inset(50%);
   white-space: nowrap;
+}
+
+.block-title {
+  color: var(--accent, #D4C17F);
+  font-family: "Playfair Display", serif;
+  font-size: 36px;
+  font-weight: 700;
+}
+
+.main {
+  flex: 1 1 auto;
 }
 
 .header-container {
@@ -189,7 +194,6 @@ a:hover {
 .header-contacts__text {
   color: #fff;
   text-align: center;
-  font-family: Raleway;
   font-size: 18px;
 }
 
@@ -205,8 +209,7 @@ a:hover {
   display: flex;
   justify-content: center;
   align-items: center;
-  -moz-column-gap: 70px;
-       column-gap: 70px;
+  column-gap: 70px;
   max-width: 794px;
 }
 .benefits__item {
@@ -225,4 +228,80 @@ a:hover {
   font-weight: 300;
   line-height: 135%;
   letter-spacing: -0.9px;
+}
+
+.appartments__title {
+  margin-bottom: 88px;
+}
+.appartments__items {
+  display: grid;
+  gap: 30px;
+  grid-template-columns: repeat(2, 1fr);
+}
+.appartments__item {
+  position: relative;
+}
+.appartments__card {
+  display: block;
+  position: relative;
+  overflow: hidden;
+  height: 100%;
+  width: 100%;
+  padding-bottom: 58%;
+  transition: all 1s ease;
+}
+.appartments__card::before {
+  position: absolute;
+  z-index: 1;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  content: "";
+  background: linear-gradient(180deg, rgba(36, 43, 51, 0) 0%, #242B33 100%);
+}
+.appartments__card:hover {
+  color: #fff;
+  transition: all 1s ease;
+}
+.appartments__card::after {
+  content: "";
+  z-index: 4;
+  position: absolute;
+  opacity: 0;
+  border: 3px double #fff;
+  transition: all 1s ease;
+}
+.appartments__card:hover::after {
+  content: "";
+  z-index: 4;
+  position: absolute;
+  opacity: 0.4;
+  top: 0;
+  left: 0;
+  bottom: 0;
+  right: 0;
+  border: 3px double #fff;
+}
+.appartments__card-img {
+  opacity: 0.99;
+  top: 0;
+  left: 0;
+  transform: scale(1.2);
+  position: absolute;
+  object-fit: cover;
+  transition: all 1s ease;
+}
+.appartments__desk {
+  position: absolute;
+  z-index: 9999;
+  left: 50px;
+  bottom: 50px;
+  font-size: 24px;
+  font-weight: 400;
+}
+
+.appartments__card:hover .appartments__card-img {
+  transform: scale(1);
+  object-fit: cover;
 }/*# sourceMappingURL=main.css.map */

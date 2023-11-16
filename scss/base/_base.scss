@@ -39,6 +39,19 @@ a {
     clip: rect(1px 1px 1px 1px);
     clip: rect(1px 1px 1px 1px);
     clip-path: inset(50%);
-    
+
     white-space:nowrap;
+}
+
+
+.block-title {
+    color: var(--accent, #D4C17F);
+    font-family: $font-accent;
+    font-size: 36px;
+    font-weight: 700;
+    
+}
+
+.main{
+    flex: 1 1 auto;
 }
