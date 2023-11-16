@@ -128,6 +128,19 @@ a:hover {
   flex: 1 1 auto;
 }
 
+._ibg {
+  position: relative;
+}
+
+._ibg img {
+  position: absolute;
+  width: 100%;
+  height: 100%;
+  top: 0;
+  left: 0;
+  object-fit: cover;
+}
+
 .header-container {
   min-height: 840px;
   display: flex;
@@ -304,4 +317,78 @@ a:hover {
 .appartments__card:hover .appartments__card-img {
   transform: scale(1);
   object-fit: cover;
+}
+
+.page__cta {
+  padding: 180px 0;
+  position: relative;
+  background: linear-gradient(180deg, #242B33 10.42%, rgba(36, 43, 51, 0) 50.52%, #242B33 90.1%), linear-gradient(0deg, rgba(36, 43, 51, 0.9) 0%, rgba(36, 43, 51, 0.9) 100%);
+}
+
+.cta__title {
+  margin-bottom: 17px;
+}
+.cta__body {
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+  column-gap: 30px;
+}
+.cta__desk {
+  line-height: 150%;
+}
+.cta__bg {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  z-index: -1;
+}
+.form__input {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 50px;
+  text-align: center;
+  padding: 0 12px;
+  background-color: rgba(255, 255, 255, 0.2);
+  color: #fff;
+  font-size: 14px;
+  transition: all 0.3s ease;
+}
+.form__input::placeholder {
+  color: #bebebe;
+}
+.form__input:focus {
+  background-color: rgba(255, 255, 255, 0.3);
+}
+.form__privacy {
+  display: flex;
+  align-items: center;
+  font-size: 13px;
+  color: #e7e7e7;
+  line-height: 123%;
+}
+.form__btn {
+  padding: 0 12px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 50px;
+  text-align: center;
+  background-color: #D4C17F;
+  color: #fff;
+  font-weight: 700px;
+  line-height: 168.75%;
+  transition: all 0.4s ease;
+}
+.form__btn:hover {
+  background-color: #fff;
+  color: #D4C17F;
+}
+
+.form-cta {
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+  gap: 35px 30px;
 }/*# sourceMappingURL=main.css.map */
