@@ -432,4 +432,16 @@ a:hover {
 }
 .video__link-icon {
   z-index: 2;
+}
+
+.page__map {
+  margin: 180px 0;
+}
+
+.map__title {
+  margin-bottom: 88px;
+}
+.map__body {
+  min-height: 358Px;
+  background-color: #bebebe;
 }/*# sourceMappingURL=main.css.map */

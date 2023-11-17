@@ -1,0 +1,15 @@
+.page__map {
+    margin: 180px 0;
+}
+.map {
+    &__title {
+        margin-bottom: 88px;
+    }
+    &__body {
+        min-height: 358Px;
+        background-color: $gray;
+    }
+    &__location {
+
+    }
+}
