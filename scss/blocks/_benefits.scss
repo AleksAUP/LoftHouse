@@ -1,12 +1,32 @@
 .page__benefits{
+    position: relative;
     padding: 120px 0;
+   
 }
+.page__benefits::after{
+        content: 'II';
+        left: calc(50% + 555px);
+        transform: translate(-50%, -3%);
+        top: 0;
+        position: absolute;
+        color: $white;
+        text-align: center;
+        font-family: $font-accent;
+        font-size: 400px;
+        font-style: normal;
+        font-weight: 700;
+        line-height: normal;
+        opacity: 0.02;
+    }
+
+
 
 .benefits {
     &-container {
         display: flex;
         justify-content: center;
     }
+  
     &__items{
         display: flex;
         justify-content: center;

@@ -211,7 +211,24 @@ a:hover {
 }
 
 .page__benefits {
+  position: relative;
   padding: 120px 0;
+}
+
+.page__benefits::after {
+  content: "II";
+  left: calc(50% + 555px);
+  transform: translate(-50%, -3%);
+  top: 0;
+  position: absolute;
+  color: #fff;
+  text-align: center;
+  font-family: "Playfair Display", serif;
+  font-size: 400px;
+  font-style: normal;
+  font-weight: 700;
+  line-height: normal;
+  opacity: 0.02;
 }
 
 .benefits-container {
@@ -243,6 +260,24 @@ a:hover {
   letter-spacing: -0.9px;
 }
 
+.appartments {
+  position: relative;
+}
+.appartments::before {
+  content: "III";
+  right: calc(50% + 555px);
+  transform: translate(50%, -10%);
+  top: 0;
+  position: absolute;
+  color: #fff;
+  text-align: center;
+  font-family: "Playfair Display", serif;
+  font-size: 400px;
+  font-style: normal;
+  font-weight: 700;
+  line-height: normal;
+  opacity: 0.02;
+}
 .appartments__title {
   margin-bottom: 88px;
 }
@@ -409,6 +444,24 @@ a:hover {
   transform: translate(-50%, -50%) scale(1.2);
 }
 
+.video {
+  position: relative;
+}
+.video::after {
+  content: "IV";
+  left: calc(50% + 555px);
+  transform: translate(-50%, 0);
+  top: 0;
+  position: absolute;
+  color: #fff;
+  text-align: center;
+  font-family: "Playfair Display", serif;
+  font-size: 400px;
+  font-style: normal;
+  font-weight: 700;
+  line-height: normal;
+  opacity: 0.02;
+}
 .video__container {
   display: flex;
   justify-content: center;
@@ -439,6 +492,24 @@ a:hover {
   margin: 180px 0;
 }
 
+.map {
+  position: relative;
+}
+.map::before {
+  content: "V";
+  right: calc(50% + 555px);
+  transform: translate(50%, -10%);
+  top: 0;
+  position: absolute;
+  color: #fff;
+  text-align: center;
+  font-family: "Playfair Display", serif;
+  font-size: 400px;
+  font-style: normal;
+  font-weight: 700;
+  line-height: normal;
+  opacity: 0.02;
+}
 .map__title {
   margin-bottom: 88px;
 }
