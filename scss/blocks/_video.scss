@@ -16,16 +16,7 @@
         content: 'IV';
         left: calc(50% + 555px);
         transform: translate(-50%, 0);
-        top: 0;
-        position: absolute;
-        color: $white;
-        text-align: center;
-        font-family: $font-accent;
-        font-size: 400px;
-        font-style: normal;
-        font-weight: 700;
-        line-height: normal;
-        opacity: 0.02;
+       @include decorNumber;
     }
     
     &__container{  
